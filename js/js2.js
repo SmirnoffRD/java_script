@@ -43,23 +43,59 @@ if (aa >= 0 && bb >= 0) {
 
 // реализовать основные 4 арифметические операции (+, -, /, *) в виде функций
 
+/**
+ * складывает две переменных.
+ * @param {number} x первая переменная
+ * @param {number} y вторая переменная
+ * @returns {number} возвращает сумму
+ */
+
 function summ(x, y) {
     return x + y;
 }
+
+/**
+ * складывает две переменных.
+ * @param {number} x первая переменная
+ * @param {number} y вторая переменная
+ * @returns {number} возвращает разницу
+ */
 
 function subtraction(x, y) {
     return x - y;
 }
 
+/**
+ * складывает две переменных.
+ * @param {number} x первая переменная
+ * @param {number} y вторая переменная
+ * @returns {number} возвращает результат умножения
+ */
+
 function  multiplication(x, y) {
     return x * y;
 }
+
+/**
+ * складывает две переменных.
+ * @param {number} x первая переменная
+ * @param {number} y вторая переменная
+ * @returns {number} возвращает результат деления
+ */
 
 function devide(x, y) {
     return x / y;
 }
 
 // реализовать функцию с тремя параметрами
+
+/**
+ * простой калькулятор для двух переменных
+ * @param {number} arg1 первая переменная
+ * @param {number} arg2 вторая переменная
+ * @param {string} operation операнд для вычисления
+ * @returns возвращает результат математической операции над переменными
+ */
 
 function mathOperation(arg1, arg2, operation) {
     switch (operation) {
@@ -80,6 +116,11 @@ function mathOperation(arg1, arg2, operation) {
 alert(mathOperation(prompt('введите х'), prompt('введите y'), prompt('введите операнд')));
 
 // вывод сообщения о вводе денег
+
+/**
+ * выводит в лог консоли выражение с правильным окончанием слова рубль в зависимости от введённой суммы
+ * @param {*} money сумма денег введённая в аппарат
+ */
 
 function terminalAnswer(money) {
     let endsWith = money % 10;
