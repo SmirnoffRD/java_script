@@ -21,7 +21,7 @@ d = 2 + b++;                // сначала + и =, потом ++
 alert(d);                   // 4
 
 alert(a);                   // 3, дважды ++
-alert(d);                   // 3, дважды ++
+alert(b);                   // 3, дважды ++
 
 // объяснить выполнение кода и последовательность действий
 
@@ -77,11 +77,13 @@ function mathOperation(arg1, arg2, operation) {
     }
 }
 
+alert(mathOperation(prompt('введите х'), prompt('введите y'), prompt('введите операнд')));
+
 // вывод сообщения о вводе денег
 
 function terminalAnswer(money) {
     let endsWith = money % 10;
-    if (endsWith > 1 || endsWith < 5) {
+    if (endsWith > 1 && endsWith < 5) {
         console.log(`Ваша сумма в ${money} рубля успешно зачислена.`);
     } else if (endsWith == 1) {
         console.log(`Ваша сумма в ${money} рубль успешно зачислена.`);
