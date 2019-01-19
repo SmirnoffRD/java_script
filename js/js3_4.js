@@ -31,7 +31,7 @@ while (index < 101) {
         numb++;
     }
     if (count === 1) {
-        console.log(index)
+        console.log(index);
     }
     index++;
 }
