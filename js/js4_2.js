@@ -106,7 +106,7 @@ const game = {
             // Двигаем игрока.
             this.player.move(direction);
             
-            if (this.player.x < 0 ||  this.player.x > 10 ||  this.player.y < 0 ||  this.player.y > 10) {
+            if (this.player.x < 0 ||  this.player.x > this.player.settings.colsCount ||  this.player.y < 0 ||  this.player.y > this.player.settings.rowsCount) {
                 switch (direction) {
                     case 7:
                         this.player.move(3);
