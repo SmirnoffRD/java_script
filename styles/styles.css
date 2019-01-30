@@ -1,0 +1,28 @@
+.mainPart{
+    height: 800px;
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deskBlock{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.text{
+    text-align: center;
+    font-size: 80px;
+}
+
+.textFigure{
+    text-align: center;
+    font-size: 70px;
+    line-height: 1.3;
+}
+
