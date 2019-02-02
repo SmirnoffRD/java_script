@@ -1,0 +1,14 @@
+.basket_block{
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 700px;
+}
+
+.basket_product{
+    margin: 10px auto 10px;
+}
+
+.basket_product img{
+    max-width: 300px;
+}
+
